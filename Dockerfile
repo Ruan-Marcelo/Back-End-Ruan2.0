@@ -1,21 +1,19 @@
-# Build stage
+# Build
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /app
 
-COPY ./RuanApi ./RuanApi
-WORKDIR /app/RuanApi
-
+COPY . .
 RUN dotnet restore
 RUN dotnet publish -c Release -o out
 
-# Runtime stage
+# Runtime
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
 
-COPY --from=build /app/RuanApi/out .
+COPY --from=build /app/out .
 
 ENV ASPNETCORE_URLS=http://+:10000
 
 EXPOSE 10000
 
-ENTRYPOINT ["dotnet", "RuanApi.dll"]
+ENTRYPOINT ["dotnet", "Back-End-Ruan2.0.dll"]
