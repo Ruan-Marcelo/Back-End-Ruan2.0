@@ -29,6 +29,7 @@ app.UseSwaggerUI();
 
 app.MapControllers();
 
+app.MapGet("/", () => "API ONLINE 🚀");
+
 app.Run();
 
-app.MapGet("/", () => "API ONLINE 🚀");
