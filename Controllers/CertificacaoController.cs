@@ -15,10 +15,10 @@ namespace RuanApi.Controllers
             _context = context;
         }
 
-        [HttpGet]
+       [HttpGet]
         public IActionResult Get()
         {
-            return Ok(_context.Certificacoes.ToList());
+            return Ok(new List<string> { "API ONLINE " });
         }
 
         [HttpPost]
