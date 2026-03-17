@@ -1,15 +1,20 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace RuanApi.Models
 {
     public class Certificacao
     {
         public int Id { get; set; }
 
-        public string Titulo { get; set; }
+        [Required]
+        public string Titulo { get; set; } = null!;
 
-        public string Instituicao { get; set; }
+        [Required]
+        public string Instituicao { get; set; } = null!;
 
         public DateTime DataConclusao { get; set; }
 
-        public string LinkCertificado { get; set; }
+        [Required]
+        public string LinkCertificado { get; set; } = null!;
     }
 }
