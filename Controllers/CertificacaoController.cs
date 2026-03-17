@@ -8,7 +8,7 @@ namespace RuanApi.Controllers
     [Route("api/[controller]")]
     public class CertificacaoController : ControllerBase
     {
-        private readonly AppDbContext _context;
+       // private readonly AppDbContext _context;
 
         public CertificacaoController(AppDbContext context)
         {
