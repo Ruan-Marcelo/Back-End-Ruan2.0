@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Back-End-Ruan2.0")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ab2afaebf93adbbea4fb5609c92a36706cf982b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+05552d2785faed6606ca2a0ebd6bab0052a46ffa")]
 [assembly: System.Reflection.AssemblyProductAttribute("Back-End-Ruan2.0")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Back-End-Ruan2.0")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
